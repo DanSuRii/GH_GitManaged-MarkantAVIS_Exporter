@@ -1,0 +1,16 @@
+﻿<Window x:Class="MarkantAVIS_Exporter.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MarkantAVIS_Exporter"
+        mc:Ignorable="d"
+        Title="Markant AVIS Exporter" Height="353.161" Width="640">
+    <StackPanel Orientation="Vertical" Width="448">
+		<ListBox x:Name="lbFileSelected" Height="240" Margin="0,10,0,0"/>
+		<Button Content="Select Files" HorizontalAlignment="Left" VerticalAlignment="Top" Click="btnSelectFiles" />
+		<CheckBox x:Name="cbMultiThread" Content="Multithread" IsChecked="True" HorizontalAlignment="Center"/>
+		<Button Content="Ausführen" HorizontalAlignment="Right" VerticalAlignment="Top" Click="btnRun" />
+
+	</StackPanel>
+</Window>
